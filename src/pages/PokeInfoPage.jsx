@@ -64,7 +64,7 @@ const PokeInfoPage = () => {
                   <span className='card__stats-name'>{statInfo.stat.name}</span>
                   {/* <span className='card__stats-values'>{statInfo.base_stat}</span> */}
                   <div className={`stat-bar`}>
-                    <div className={`stat-value bg__${pokemon?.types[0].type.name}`} style={{ width: `${(statInfo.base_stat / 255) * 100}%` }}>
+                    <div className={`stat-value bg__${pokemon?.types[0].type.name}`} style={{ width: `${(statInfo.base_stat / 150) * 100}%` }}>
                       {statInfo.base_stat}
                     </div>
                   </div>

@@ -114,6 +114,18 @@ header{
     background-color: white; 
 }
 
+.box{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    gap: 2rem;
+    flex-wrap: wrap;
+    margin: 0 auto;
+    padding-top: 2em;
+    padding-bottom: 2em;
+    height: 100%;
+}
+
 .poke__cards {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(14em, 1fr));
@@ -121,18 +133,17 @@ header{
     padding: 0em 5em 5em 5em;
     gap: 1em;
     margin-top: 2em;
-    margin-bottom: 2em;
+    margin-bottom: auto;
     background: #ccc;
+
 }
 .poke__error {
     text-align: center;
-    position: fixed;
-    top: 0;
-    left: 0;
     width: 100%;
     height: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 1em;
+    padding: 10em 2em 10em 2em; 
+    margin: 0 auto;
 }
