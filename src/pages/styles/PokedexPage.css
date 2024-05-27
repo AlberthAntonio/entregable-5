@@ -1,0 +1,138 @@
+.poke__container {
+    background: #ccc;
+    flex: 1;
+}
+header{
+    background-color: rgb(198, 67, 60);
+    
+}
+.poke__logo{
+    position: relative;
+    width: 80%;
+    max-width: 500px;
+    height: auto;
+    padding-bottom: 1em;
+    padding-top: 1em;
+    padding-left: 3em;
+    left: 50px;
+    top: 40px;
+}
+.line__black {
+    text-align: center;
+    margin-bottom: 5px;
+    padding-top: 1.5em;
+    background: black;
+}
+.poke__welcome {
+    text-align: center;
+    margin-bottom: 5px;
+    padding-top: 2em;
+    font-size: 1.5em;
+    padding: 1em;
+    text-shadow: 2px 2px 4px rgba(36, 36, 36, 0.5);
+}
+.poke__name-trainer{
+    text-transform: uppercase;
+}
+
+
+/* Media queries para ajustar el tamaño del texto */
+@media (max-width: 1200px) {
+    .poke__welcome {
+        font-size: 22px;
+    }
+}
+
+@media (max-width: 992px) {
+    .poke__welcome {
+        font-size: 20px;
+    }
+}
+
+@media (max-width: 768px) {
+    .poke__welcome {
+        font-size: 18px;
+    }
+}
+
+@media (max-width: 576px) {
+    .poke__welcome {
+        font-size: 16px;
+    }
+}
+
+
+.poke__name-trainer {
+    color: red;
+}
+.poke__form__selector {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.poke__form {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    padding-top: 1em;
+}
+  
+.poke__form input[type="text"] {
+    padding: 10px;
+    width: 20em;
+    border: 1px solid #ccc;
+    border-radius: 0.8em 0em 0em 0.8em;
+    
+}
+  
+.poke__btn {
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
+    border: 1px solid  #4CAF50;
+    border-radius: 0em 0.8em 0.8em 0em;
+    cursor: pointer;
+}
+  
+.poke__btn:hover {
+    background-color: #45a049;
+}
+.poke__selector {
+    margin-left: 2em;
+    position: relative;
+    padding-top: 1em;
+}
+
+.poke__selector select {
+    width: 200px; 
+    padding: 10px; 
+    font-size: 16px; 
+    border: 1px solid #ccc; 
+    border-radius: 5px; 
+    background-color: white; 
+}
+
+.poke__cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(14em, 1fr));
+    justify-items: center;
+    padding: 0em 5em 5em 5em;
+    gap: 1em;
+    margin-top: 2em;
+    margin-bottom: 2em;
+    background: #ccc;
+}
+.poke__error {
+    text-align: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1em;
+}

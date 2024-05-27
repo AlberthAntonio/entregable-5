@@ -1,0 +1,154 @@
+/* Estilos generales para la sección de estadísticas */
+.stats__container {
+    background-color: #f8f9fa;
+    border-radius: 10px;
+    max-width: 800px;
+    margin: 20px auto;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.311);
+    text-align: center;
+
+  }
+.stats__img {
+    display: flex;
+    justify-content: center;
+    
+}
+.image__poke {
+    width: 50%;
+}
+
+.stats__name_poke {
+    font-size: 30px;
+    font-weight: bold;
+    margin-top: 20px;
+    color: #333;
+    text-transform: capitalize;
+}
+/* Estilado para el peso y altura */
+.stats__types_abilities {
+    list-style-type: none;
+    padding: 0;
+    margin: 10px 0;
+    display: flex;
+    gap: 5em;
+    justify-content: center;
+}
+  
+.stats__types_abilities li {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 16px;
+    color: #949090;
+    padding: 5px 0;
+    
+}
+  
+.stats__types_abilities li span {
+    margin: 2px 0;
+    font-size: 12px;
+}
+/* Estilado para los tipos y habilidades */
+hr {
+  border: 0; 
+  height: 1px; 
+  background-color: #ccc; 
+  margin: 20px auto;
+  width: 90%;
+}
+.stats__abilities__and__types {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 5em;
+    justify-content: center;
+    margin: 10px;
+}
+
+.stats__types ul, .stats__abilities ul {
+    list-style: none;
+    display: flex;
+    gap: 1em;
+    padding-top: 1em;
+    justify-content: center;
+    text-transform: capitalize;
+}
+.stats__types li, .stats__abilities li {
+    padding: 0.4em;
+    border: 1px #cecece solid;
+    width: calc(50% - 0.8em);
+}
+@media (max-width: 600px) {
+    .stats__types li,
+    .stats__abilities li {
+        width: 100%; /* Cambia el ancho de los elementos al 100% en pantallas más pequeñas */
+    }
+}
+ 
+.card__stats {
+    padding: 1em;
+}
+.card__stats-title{
+    display: flex;
+    justify-content: left;
+    padding: 1em 1em;
+}
+.card__stats-list li {
+  list-style-type: none;
+  padding: 0;
+  margin-bottom: 10px;
+}
+.card__stats-name {
+    display: inline-block;
+    width: 300px; /* Ancho fijo para los nombres de las estadísticas */
+    text-transform: capitalize;
+}
+.stat-bar {
+    background-color: #f0f0f0;
+    height: 20px;
+    border-radius: 5px;
+    overflow: hidden;
+  }
+  
+.stat-value {
+    height: 100%;
+    color: white;
+    text-align: center;
+    line-height: 20px;
+  }
+
+.card__movents {
+    background-color: #f8f9fa;
+    border-radius: 10px;
+    max-width: 800px;
+    padding: 1em;
+    margin: 20px auto;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.311);
+}
+.card__movents-title {
+ margin-bottom: 10px;
+}
+.card__items {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    text-align: center;
+}
+.card__poke__movent {
+    margin: 5px;
+    background-color: #d3d3d3;
+    border: 1px #929090 solid;
+    border-radius: 0.8em;
+    height: 30px;
+    display: flex; /* Utiliza flexbox */
+    justify-content: center; /* Centra horizontalmente */
+    align-items: center; /* Centra verticalmente */
+}
+@media (max-width: 600px) {
+    .card__items {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        text-align: center;
+    }
+    .card__poke__movent {
+        font-size: 0.8em;
+    }
+}
